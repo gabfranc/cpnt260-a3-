@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Montserrat+Subrayada:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarabun:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sofia&family=Tangerine:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+
+
+header {
+  width: 100%;
+  height: 105vh;
+  object-fit:fill;
+  overflow: hidden;
+  background-image: #100a3c;
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+body{
+  background: #eaa187;
+  max-height: 220vh;
+  overflow-x: hidden;
+  font-family: 'Sarabun', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav{
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  right: 20vh;
+  padding: 10px 1em;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-flex;
+  margin-left: 45px;
+
+}
+
+nav ul li a {
+  color:#d7e1f7;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color:#9bbbf7;
+  font-weight: 700;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+svg{
+  height: 20vh;
+}
+svg:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+/*** Menu BAR ICONS ***/
+#sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(98, 127, 163);
+  box-shadow: -12px 0px 4px rgba(31, 44, 94, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#sidebar li {
+  margin-top: 25px;
+  width: 100%;
+}
+
+#sidebar a {
+  color:#0a0074;
+  margin-top: 15px;
+  padding-top: 25px;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+}
+
+#sidebar a:hover {
+  padding: 20px 20px 20px 20px;
+  color:#29519c;
+  font-weight: 700;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+#sidebar li:hover {
+  margin-top: 35px;
+  width: 100%;
+  height: 70px;
+  width: 20vh;
+}
+.menu_icon {
+  display: none;
+}
+
+/** h1/Title Name **/
+section{
+  display: flex;
+  text-align: left;
+  position: absolute;
+  margin-top: 35vh;
+  margin-bottom: 15vh;
+  margin-right: 75vh;
+
+}
+main{
+  display: block;
+  justify-content: center;
+  text-align: left;
+}
+h1{
+  color: #d4af5e;
+  text-shadow: 3px 3px 2px #29519c;
+  perspective: 100px;
+  font-size: 10vh;
+  position: relative;;
+  animation: flicker 7.5s infinite;
+  cursor: pointer
+}
+
+h3 {
+  color: #d4af5e;
+  text-shadow: 3px 3px 2px #29519c;
+  justify-content: left;
+  text-align: left;
+}
+
+h1:hover {
+  animation: flicker 0.5s infinite;
+  transition: transform 0.5s ease-in-out;
+}
+
+@keyframes flicker {
+  0%, 50% {opacity: 1;}
+  30% {opacity: 0.5;}
+}
+
+h2, .button{
+  margin-top: 3vh;
+}
+h2 {
+  font-size: 4vh;
+  color:#1f407d;
+  text-shadow: 2px 2px 2px #7ba0d2;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+ 
+  header{
+    height: 100vh;
+  }
+  .content{
+    margin-left: 55vh;
+    margin-top: -55px;
+    width: 35vh;
+  }
+  h1 {
+    width: 80vh;
+    font-size: 55px;
+    text-shadow: 3px 3px 2px #100a3c;
+    text-align: left;
+  }
+
+  .content p{
+    text-align: left;
+    font-size: 15px;
+  }
+
+  video{
+    height: 125vh;
+  }
+  nav {
+    right: 39vh;
+    top: 0.1em;
+  }
+
+  #sidebar {
+    width: 100%;
+  }
+
+  .service_cards {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-auto-flow:column;
+    gap: 7vh;
+  }
+  
+  .services_cards img {
+    height: 20px;
+  }
+
+/**** Teams Profile *****/
+
+.team_title{
+  margin-left: 45vh;
+}
+.team_cards{
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  grid-gap: 20px;
+}
+
+.team_cards img{
+  height: 5px;
+  width: 5px;
+  object-fit: cover;
+  border-radius: 170px;
+}
+
+
+
+/************* Footer *************/
+  footer {
+    position: absolute;
+    top: 100vh;
+    width: 200vh;
+  }
+  .footer {
+    position:sticky;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color:#c5cfe4;
+    color:#779fea;
+    text-align: center;
+  }
+  
+  .footer p {
+    margin-top : 3vh;
+  }
+
+}
+
+@media(max-width: 800px) {
+  nav .OnMobile{
+    display: none;
+  }
+
+  .menu_icon {
+    display: block;
+
+  }
+}
+
+/** Button Settings **/
+
+button {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 600;
+  padding: 15px 15px 15px 15px;
+  font-size: 13px;
+  background: linear-gradient(40deg, #7e83dd,#a8a0ee, #7e8cdd, #c5cfe4) ;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  background: linear-gradient(40deg, #5d74be,#7da1e4, #659fd5, #9ecded) ;
+  box-shadow: 2px 3px 4px #93a4dc;
+}
+
+button a{
+  text-decoration: none;
+  color:#0e284d;
+}
+
+button a:hover{
+  color:#05172f;
+  font-weight: 700;
+}
+
+/*** Info about the Goldcoast****/
+section #About{
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  margin-top: 50vh;
+  width: 50rem;
+  margin-left: -13vh;
+
+}
+
+.info{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2vh;
+}
+
+.info h2{
+  font-size: 35px;
+  text-align: center;
+}
+
+.info p{
+  margin-top: 15vh;
+  text-align: left;
+}
+
+
+/**** Images SlideShow ***/
+.slide_img{
+  margin-top:5vh;
+  position: absolute;
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2vh;
+}
+
+.slide_img:hover{
+  opacity: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide_img img{
+  margin-top: 15vh;
+  margin-left: 15vh;
+  border-radius: 5px;
+  height: 55vh;
+  width: 65vh;
+  object-fit:fill;
+  overflow:auto;
+  justify-content: flex-end;
+  align-content: flex-end;
+  position: absolute;
+
+}
+
+
+button{
+  background: none;
+  margin-top: 75vh;
+  margin-left: 40vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.turn-right{
+  margin-left: 2vh;
+}
+
+/****    Service Cards         ****/
+
+#services {
+  margin-top: 170vh;
+  margin-left: -15vh;
+  display: grid;
+  grid-auto-flow: row;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+#services h2 {
+  font-size: 35px;
+}
+
+.service_cards h3 {
+  font-size: 20px;
+  margin-top: 2vh;
+  text-align: center;
+  color:#1f407d;
+  text-shadow: 2px 2px 2px #7ba0d2;
+}
+
+.service_cards {
+  margin-top: 15vh;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 7vh;
+}
+.service_cards img{
+  height: 50vh;
+  width: 50vh;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.service {
+  cursor:pointer;
+}
+.service:hover{
+  transform: scale(1.1);
+  opacity: 60%;
+  transition: transform 0.3s ease-in-out;
+}
+
+/*************** Teams Profile ****************/
+
+#Teams {
+  width: 90%;
+  margin-top: 290vh;
+  margin-left: -5vh;
+  display: grid;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team_title h2{
+  font-size: 50px;
+}
+
+.team_cards{
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  column-gap: 30px;
+}
+
+.team_cards .our_team img{
+  margin-top: 5vh;
+  height: 40vh;
+  width: 40vh;
+  object-fit: cover;
+  border-radius: 170px;
+}
+
+.our_team h3{
+  text-align: center;
+  color:#1f407d;
+}
+
+
+/**** Footer ****/
+footer {
+  position: absolute;
+  top: 540vh;
+  width: 200vh;
+}
+
+footer svg{
+  height: 20vh;
+}
+
+.footer {
+  position:sticky;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30vh;
+  background-color:#c5cfe4;
+  color:#779fea;
+  text-align: center;
+}
+
+.footer p{
+  color:#1f407d;
+  margin-top: -8vh;
+}
+
