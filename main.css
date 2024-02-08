@@ -10,7 +10,7 @@
 header {
   width: 100%;
   height: 105vh;
-  object-fit:fill;
+  object-fit: fill;
   overflow: hidden;
   background-image: #100a3c;
   position: relative;
@@ -39,7 +39,7 @@ nav{
   right: 20vh;
   padding: 10px 1em;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
 }
 
